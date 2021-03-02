@@ -1,3 +1,5 @@
+package servlet.model;
+
 
 public class Todo {
 	private int UserId;
@@ -17,16 +19,16 @@ public class Todo {
 	public boolean getCompleted() {
 		return Completed;
 	}
-	public static setUserId(int UserId) {
+	public void setUserId(int UserId) {
 		this.UserId = UserId;
 	}
-	public static setId(int Id) {
+	public void setId(int Id) {
 		this.Id = Id;
 	}
-	public static setTitle(String Title) {
+	public void setTitle(String Title) {
 		this.Title = Title;
 	}
-	public static setCompleted(boolean Completed) {
+	public void setCompleted(boolean Completed) {
 		this.Completed = Completed;
 	}
 	

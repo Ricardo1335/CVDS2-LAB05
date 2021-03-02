@@ -1,3 +1,5 @@
+package servlet;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,11 +11,11 @@ import java.util.List;
 
 import com.google.gson.Gson;
 
-import main.servlet.model.Todo;
+import servlet.model.Todo;
 
 public class Service {
 
-   public static Todo getTodo(int id) throws MalformedURLException, IOException {
+   public static servlet.model.Todo getTodo(int id) throws MalformedURLException, IOException {
        URL urldemo = new URL("https://jsonplaceholder.typicode.com/todos/" + id);
        URLConnection yc = urldemo.openConnection();
        BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
