@@ -2,34 +2,34 @@ package servlet.model;
 
 
 public class Todo {
-	private int UserId;
-	private int Id;
-	private String Title;
-	private boolean Completed;
+	private int userId;
+	private int id;
+	private String title;
+	private boolean completed;
 	public Todo(){}
 	public int getUserId() {
-		return UserId;
+		return userId;
 	}
 	public int getId() {
-		return Id;
+		return id;
 	}
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 	public boolean getCompleted() {
-		return Completed;
+		return completed;
 	}
-	public void setUserId(int UserId) {
-		this.UserId = UserId;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public void setId(int Id) {
-		this.Id = Id;
+	public void setId(int id) {
+		this.id = id;
 	}
-	public void setTitle(String Title) {
-		this.Title = Title;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public void setCompleted(boolean Completed) {
-		this.Completed = Completed;
+	public void setCompleted(boolean completed) {
+		this.completed = completed;
 	}
 	
 
