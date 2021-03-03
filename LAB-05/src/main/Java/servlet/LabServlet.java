@@ -33,7 +33,6 @@ public class LabServlet extends HttpServlet {
         {
         	int intId = Integer.parseInt(stringId);
             Todo todo = Service.getTodo(intId); 
-            System.out.println(todo.getId());
             ArrayList<Todo> todoList = new ArrayList<Todo>();
             todoList.add(todo);
             responseWriter.write(Service.todosToHTMLTable(todoList));
